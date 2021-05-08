@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const dotenv = require("dotenv");
 
+dotenv.config();
 app.use(express.static("dist"));
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -38,6 +39,7 @@ app.post('/add-url', async(req, res) => {
                 irony,
             } = response.data)
         );
+        console.log(api_link)
     } catch (exception) {
         console.log(exception.message);
     }
