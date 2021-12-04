@@ -29,7 +29,7 @@ npm run build-dev
 ```
 Production build:
 ```bash
-npm run build-dev
+npm run build-prod
 ```
 
 
